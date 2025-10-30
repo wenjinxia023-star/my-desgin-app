@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+.hero-section-background {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-section-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('https://img.remit.ee/api/file/BQACAgUAAyEGAASHRsPbAAECOwpozm0u5oJZ5yzs2-q-gdBWqI2IVwAC9xgAAtUHeVZRmlyf3JNpfzYE.png');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
